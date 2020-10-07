@@ -7,7 +7,7 @@ USER 0
 RUN pacman -Syu --noconfirm
 
 # Install ansible
-RUN pacman -S ansible --noconfirm
+RUN pacman -S ansible openssh --noconfirm
 
 # Ansible.cfg
 COPY ./ansible.cfg /etc/ansible/ansible.cfg
