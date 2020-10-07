@@ -3,6 +3,9 @@ FROM archlinux:latest
 # Switch to root
 USER 0
 
+# Update database
+RUN pacman -Syy
+
 # Update system
 RUN pacman -Syu --noconfirm
 
